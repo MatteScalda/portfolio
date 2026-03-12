@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <text
+    x="50%"
+    y="50%"
+    dominant-baseline="central"
+    text-anchor="middle"
+    font-family="ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace"
+    font-size="12"
+    font-weight="700"
+    fill="#22d3ee"
+    letter-spacing="0.5"
+  >&lt;MS /&gt;</text>
+</svg>
