@@ -1,0 +1,61 @@
+{
+  "Metadata": {
+    "title": "Matteo | Freelance Web Developer",
+    "description": "Freelance web developer crafting modern, performant digital experiences."
+  },
+  "Nav": {
+    "about": "About",
+    "projects": "Projects",
+    "techStack": "Tech Stack",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "name": "Matteo",
+    "role": "Freelance Web Developer",
+    "tagline": "I build modern, fast, and beautiful web experiences.",
+    "cta": "See my work"
+  },
+  "About": {
+    "heading": "About Me",
+    "label": "// who I am",
+    "bio1": "I'm a freelance web developer passionate about building <highlight>modern</highlight> and <highlight>performant</highlight> web applications. I turn ideas into clean, functional digital products.",
+    "bio2": "From concept to deployment, I handle the full development cycle with attention to detail, <highlight>clean code</highlight>, and great user experience."
+  },
+  "Projects": {
+    "heading": "Projects",
+    "label": "// what I've built",
+    "viewProject": "Live Demo",
+    "viewCode": "Source Code",
+    "items": {
+      "timetrack": {
+        "title": "TimeTrack",
+        "description": "A time tracking web application for freelancers and teams to manage projects and track billable hours efficiently."
+      },
+      "buildingCo": {
+        "title": "Building Co.",
+        "description": "Corporate website for a construction company, featuring project showcases, services, and a modern design."
+      }
+    }
+  },
+  "TechStack": {
+    "heading": "Tech Stack",
+    "label": "// tools I use",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    }
+  },
+  "Contact": {
+    "heading": "Get in Touch",
+    "label": "// let's talk",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "placeholder": "Contact form coming soon.",
+    "emailLabel": "Or reach me at"
+  },
+  "Footer": {
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with Next.js"
+  }
+}
