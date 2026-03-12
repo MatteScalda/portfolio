@@ -1,0 +1,29 @@
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading__label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.section-heading__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading__line {
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  margin-top: 1rem;
+}

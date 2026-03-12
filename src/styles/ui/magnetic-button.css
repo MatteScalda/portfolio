@@ -1,0 +1,33 @@
+.magnetic-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: transparent;
+  border: 1.5px solid var(--color-accent-dim);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.magnetic-button:hover {
+  background-color: oklch(77.2% 0.152 198.51 / 0.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 20px oklch(77.2% 0.152 198.51 / 0.2), 0 0 40px oklch(77.2% 0.152 198.51 / 0.1);
+}
+
+.magnetic-button svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.magnetic-button:hover svg {
+  transform: translateY(2px);
+}

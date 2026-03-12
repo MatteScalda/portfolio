@@ -1,0 +1,35 @@
+.tech-stack {
+  padding: 6rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-stack__category {
+  margin-bottom: 3rem;
+}
+
+.tech-stack__category:last-child {
+  margin-bottom: 0;
+}
+
+.tech-stack__category-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+  padding-left: 0.25rem;
+}
+
+.tech-stack__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .tech-stack__grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

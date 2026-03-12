@@ -1,0 +1,38 @@
+.locale-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.locale-switcher__btn {
+  padding: 0.375rem 0.625rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.locale-switcher__btn:hover {
+  color: var(--color-text-primary);
+}
+
+.locale-switcher__btn--active {
+  color: var(--color-accent);
+  background-color: oklch(77.2% 0.152 198.51 / 0.1);
+}
+
+.locale-switcher__divider {
+  width: 1px;
+  height: 16px;
+  background-color: var(--color-bg-tertiary);
+}

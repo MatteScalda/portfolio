@@ -1,0 +1,38 @@
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 0.75rem;
+  border-radius: 12px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.tech-icon:hover {
+  transform: translateY(-4px);
+}
+
+.tech-icon__svg {
+  width: 36px;
+  height: 36px;
+  transition: filter 0.3s ease;
+}
+
+.tech-icon:hover .tech-icon__svg {
+  filter: drop-shadow(0 0 8px var(--tech-brand-color, var(--color-accent)));
+}
+
+.tech-icon__name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.tech-icon:hover .tech-icon__name {
+  color: var(--color-text-primary);
+}

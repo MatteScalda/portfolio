@@ -1,0 +1,8 @@
+.animated-text__word {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.animated-text__char {
+  display: inline-block;
+}

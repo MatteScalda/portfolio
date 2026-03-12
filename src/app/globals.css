@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* === Component Styles === */
+
+/* Layout */
+@import "../styles/layout/header.css";
+@import "../styles/layout/footer.css";
+@import "../styles/layout/scroll-progress.css";
+
+/* Sections */
+@import "../styles/sections/hero.css";
+@import "../styles/sections/about.css";
+@import "../styles/sections/projects.css";
+@import "../styles/sections/tech-stack.css";
+@import "../styles/sections/contact.css";
+
+/* UI Components */
+@import "../styles/ui/animated-text.css";
+@import "../styles/ui/section-heading.css";
+@import "../styles/ui/project-card.css";
+@import "../styles/ui/glow-card.css";
+@import "../styles/ui/grid-background.css";
+@import "../styles/ui/typewriter-text.css";
+@import "../styles/ui/magnetic-button.css";
+@import "../styles/ui/tech-icon.css";
+@import "../styles/ui/locale-switcher.css";
+@import "../styles/ui/scroll-to-top.css";
+
+/* === Theme Tokens === */
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+
+  --color-bg-primary: #09090b;
+  --color-bg-secondary: #18181b;
+  --color-bg-tertiary: #27272a;
+
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  --color-accent: #22d3ee;
+  --color-accent-dim: #0891b2;
+  --color-accent-glow: oklch(77.2% 0.152 198.51 / 0.2);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* === Font Faces === */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Variable.ttf") format("truetype");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Base Styles === */
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Scrollbar === */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* === Selection === */
+
+::selection {
+  background-color: var(--color-accent-glow);
+  color: var(--color-text-primary);
 }
