@@ -44,7 +44,7 @@ export function MagneticButton({
     onMouseMove: handleMouseMove as React.MouseEventHandler<HTMLElement>,
     onMouseLeave: handleMouseLeave,
     animate: { x: position.x, y: position.y },
-    transition: { type: "spring", stiffness: 150, damping: 15, mass: 0.1 },
+    transition: { type: "spring" as const, stiffness: 150, damping: 15, mass: 0.1 },
   };
 
   if (onClick) {
