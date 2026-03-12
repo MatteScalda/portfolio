@@ -1,7 +1,40 @@
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.project-card--has-link {
+  cursor: none;
+}
+
+.project-card__stretched-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: none;
+}
+
+.project-card__cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  margin-left: -26px;
+  margin-top: -26px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-bg-primary);
+}
+
+.project-card__cursor svg {
+  width: 20px;
+  height: 20px;
 }
 
 .project-card__image-wrapper {
@@ -63,6 +96,8 @@
 }
 
 .project-card__links {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 1rem;
 }
