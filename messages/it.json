@@ -49,11 +49,28 @@
 		}
 	},
 	"Contact": {
-		"heading": "Contattami",
 		"label": "// parliamone",
-		"subtitle": "Hai un progetto in mente? Parliamone.",
-		"placeholder": "Form di contatto in arrivo.",
-		"emailLabel": "Oppure scrivimi a"
+		"headline1": "Hai un'idea?",
+		"headline2": "Costruiamola.",
+		"badge": "Disponibile per progetti",
+		"cta": "Contattami",
+		"modal": {
+			"title": "Come preferisci contattarmi?",
+			"or": "o",
+			"call": {
+				"title": "Chiamami",
+				"hours": "Lun–Sab, 9:00–21:00 CET",
+				"cta": "Chiama ora",
+				"copy": "Copia numero",
+				"copied": "Copiato!"
+			},
+			"email": {
+				"title": "Invia un'email",
+				"cta": "Apri email",
+				"copy": "Copia email",
+				"copied": "Copiata!"
+			}
+		}
 	},
 	"Footer": {
 		"copyright": "Tutti i diritti riservati.",

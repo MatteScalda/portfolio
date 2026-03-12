@@ -49,11 +49,28 @@
 		}
 	},
 	"Contact": {
-		"heading": "Get in Touch",
 		"label": "// let's talk",
-		"subtitle": "Have a project in mind? Let's talk.",
-		"placeholder": "Contact form coming soon.",
-		"emailLabel": "Or reach me at"
+		"headline1": "Have an idea?",
+		"headline2": "Let's build it.",
+		"badge": "Available for projects",
+		"cta": "Get in touch",
+		"modal": {
+			"title": "How would you like to connect?",
+			"or": "or",
+			"call": {
+				"title": "Give me a call",
+				"hours": "Mon–Sat, 9:00–21:00 CET",
+				"cta": "Call now",
+				"copy": "Copy number",
+				"copied": "Copied!"
+			},
+			"email": {
+				"title": "Send an email",
+				"cta": "Open email",
+				"copy": "Copy email",
+				"copied": "Copied!"
+			}
+		}
 	},
 	"Footer": {
 		"copyright": "All rights reserved.",

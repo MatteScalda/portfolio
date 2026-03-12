@@ -3,6 +3,8 @@ export const SITE = {
 	title: "Matteo | Freelance Web Developer",
 	url: "https://matteo.dev",
 	email: "matteo.scaldaferri@gmail.com",
+	phone: "+39 349 901 0793",
+	phoneTel: "+393499010793",
 	github: "https://github.com/mattescalda",
 	linkedin: "https://www.linkedin.com/in/matteo-scaldaferri-3260a51b2/",
 } as const;
