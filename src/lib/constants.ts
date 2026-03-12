@@ -1,7 +1,7 @@
 export const SITE = {
 	name: "Matteo",
 	title: "Matteo | Freelance Web Developer",
-	url: "https://matteo.dev",
+	url: "https://mattescalda.vercel.app",
 	email: "matteo.scaldaferri@gmail.com",
 	phone: "+39 349 901 0793",
 	phoneTel: "+393499010793",
