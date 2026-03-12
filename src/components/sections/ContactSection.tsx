@@ -1,16 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { m } from "motion/react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ContactModal } from "@/components/ui/ContactModal";
+import { useContactModal } from "@/lib/contact-modal-context";
 import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/ui/Icons";
 import { SITE, SECTION_IDS, ANIMATION } from "@/lib/constants";
 
 export function ContactSection() {
   const t = useTranslations("Contact");
-  const [modalOpen, setModalOpen] = useState(false);
+  const { openModal } = useContactModal();
 
   return (
     <section id={SECTION_IDS.contact} className="contact">
@@ -33,7 +32,7 @@ export function ContactSection() {
           {t("badge")}
         </div>
 
-        <MagneticButton onClick={() => setModalOpen(true)}>
+        <MagneticButton onClick={openModal}>
           {t("cta")}
         </MagneticButton>
 
@@ -65,8 +64,6 @@ export function ContactSection() {
           </a>
         </div>
       </m.div>
-
-      <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 }

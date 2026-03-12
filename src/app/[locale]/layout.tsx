@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { MotionProvider } from "@/components/providers/MotionProvider";
 import { ParallaxProviderWrapper } from "@/components/providers/ParallaxProviderWrapper";
+import { ContactModalProvider } from "@/lib/contact-modal-context";
+import { ContactModal } from "@/components/ui/ContactModal";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
@@ -61,10 +63,13 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <MotionProvider>
             <ParallaxProviderWrapper>
-              <ScrollProgress />
-              <Header />
-              <main>{children}</main>
-              <Footer />
+              <ContactModalProvider>
+                <ScrollProgress />
+                <Header />
+                <main>{children}</main>
+                <Footer />
+                <ContactModal />
+              </ContactModalProvider>
             </ParallaxProviderWrapper>
           </MotionProvider>
         </NextIntlClientProvider>

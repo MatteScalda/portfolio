@@ -4,14 +4,11 @@ import { useState, useEffect, useCallback } from "react";
 import { m, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
 import { PhoneIcon, MailIcon, CopyIcon, CheckIcon, XIcon } from "@/components/ui/Icons";
+import { useContactModal } from "@/lib/contact-modal-context";
 import { SITE } from "@/lib/constants";
 
-interface ContactModalProps {
-	isOpen: boolean;
-	onClose: () => void;
-}
-
-export function ContactModal({ isOpen, onClose }: ContactModalProps) {
+export function ContactModal() {
+	const { isOpen, closeModal: onClose } = useContactModal();
 	const t = useTranslations("Contact");
 	const [copiedPhone, setCopiedPhone] = useState(false);
 	const [copiedMail, setCopiedMail] = useState(false);
