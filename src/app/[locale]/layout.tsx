@@ -1,0 +1,74 @@
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { MotionProvider } from "@/components/providers/MotionProvider";
+import { ParallaxProviderWrapper } from "@/components/providers/ParallaxProviderWrapper";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { ScrollProgress } from "@/components/layout/ScrollProgress";
+import { SITE } from "@/lib/constants";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    metadataBase: new URL(SITE.url),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: { en: "/en", it: "/it" },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `${SITE.url}/${locale}`,
+      siteName: SITE.title,
+      locale: locale === "it" ? "it_IT" : "en_US",
+      type: "website",
+    },
+  };
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return (
+    <html lang={locale} className="dark">
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <MotionProvider>
+            <ParallaxProviderWrapper>
+              <ScrollProgress />
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </ParallaxProviderWrapper>
+          </MotionProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}
