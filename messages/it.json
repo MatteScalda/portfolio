@@ -1,61 +1,62 @@
 {
-  "Metadata": {
-    "title": "Matteo | Sviluppatore Web Freelance",
-    "description": "Sviluppatore web freelance specializzato nella creazione di esperienze digitali moderne e performanti."
-  },
-  "Nav": {
-    "about": "Chi Sono",
-    "projects": "Progetti",
-    "techStack": "Tecnologie",
-    "contact": "Contatti"
-  },
-  "Hero": {
-    "greeting": "Ciao, sono",
-    "name": "Matteo",
-    "role": "Sviluppatore Web Freelance",
-    "tagline": "Creo esperienze web moderne, veloci e curate.",
-    "cta": "Vedi i miei lavori"
-  },
-  "About": {
-    "heading": "Chi Sono",
-    "label": "// chi sono",
-    "bio1": "Sono uno sviluppatore web freelance appassionato di applicazioni web <highlight>moderne</highlight> e <highlight>performanti</highlight>. Trasformo le idee in prodotti digitali puliti e funzionali.",
-    "bio2": "Dal concept al deployment, gestisco l'intero ciclo di sviluppo con attenzione ai dettagli, <highlight>codice pulito</highlight> e ottima esperienza utente."
-  },
-  "Projects": {
-    "heading": "Progetti",
-    "label": "// cosa ho realizzato",
-    "viewProject": "Demo Live",
-    "viewCode": "Codice Sorgente",
-    "items": {
-      "timetrack": {
-        "title": "TimeTrack",
-        "description": "Un'applicazione web per il tracciamento del tempo dedicata a freelancer e team, per gestire progetti e ore fatturabili."
-      },
-      "buildingCo": {
-        "title": "Building Co.",
-        "description": "Sito web aziendale per un'impresa edile, con showcase dei progetti, servizi e un design moderno."
-      }
-    }
-  },
-  "TechStack": {
-    "heading": "Tecnologie",
-    "label": "// strumenti che uso",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Strumenti"
-    }
-  },
-  "Contact": {
-    "heading": "Contattami",
-    "label": "// parliamone",
-    "subtitle": "Hai un progetto in mente? Parliamone.",
-    "placeholder": "Form di contatto in arrivo.",
-    "emailLabel": "Oppure scrivimi a"
-  },
-  "Footer": {
-    "copyright": "Tutti i diritti riservati.",
-    "builtWith": "Realizzato con Next.js"
-  }
+	"Metadata": {
+		"title": "Matteo | Sviluppatore Web Freelance",
+		"description": "Sviluppatore web freelance specializzato nella creazione di esperienze digitali moderne e performanti."
+	},
+	"Nav": {
+		"about": "Chi Sono",
+		"projects": "Progetti",
+		"techStack": "Tecnologie",
+		"contact": "Contatti"
+	},
+	"Hero": {
+		"greeting": "Ciao, sono",
+		"name": "Matteo",
+		"role": "Sviluppatore Web Freelance",
+		"tagline": "Creo esperienze web moderne, veloci e curate.",
+		"cta": "Vedi i miei lavori",
+		"scroll": "scorri"
+	},
+	"About": {
+		"heading": "Chi Sono",
+		"label": "// chi sono",
+		"bio1": "Sono uno sviluppatore web freelance appassionato di applicazioni web <highlight>moderne</highlight> e <highlight>performanti</highlight>. Trasformo le idee in prodotti digitali puliti e funzionali.",
+		"bio2": "Dal concept al deployment, gestisco l'intero ciclo di sviluppo con attenzione ai dettagli, <highlight>codice pulito</highlight> e ottima esperienza utente."
+	},
+	"Projects": {
+		"heading": "Progetti",
+		"label": "// cosa ho realizzato",
+		"viewProject": "Demo Live",
+		"viewCode": "Codice Sorgente",
+		"items": {
+			"timetrack": {
+				"title": "TimeTrack",
+				"description": "Un'applicazione web per il tracciamento del tempo dedicata a freelancer e team, per gestire progetti e ore fatturabili."
+			},
+			"buildingCo": {
+				"title": "Building Co.",
+				"description": "Sito web aziendale per un'impresa edile, con showcase dei progetti, servizi e un design moderno."
+			}
+		}
+	},
+	"TechStack": {
+		"heading": "Tecnologie",
+		"label": "// strumenti che uso",
+		"categories": {
+			"frontend": "Frontend",
+			"backend": "Backend",
+			"tools": "Strumenti"
+		}
+	},
+	"Contact": {
+		"heading": "Contattami",
+		"label": "// parliamone",
+		"subtitle": "Hai un progetto in mente? Parliamone.",
+		"placeholder": "Form di contatto in arrivo.",
+		"emailLabel": "Oppure scrivimi a"
+	},
+	"Footer": {
+		"copyright": "Tutti i diritti riservati.",
+		"builtWith": "Realizzato con Next.js"
+	}
 }

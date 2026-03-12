@@ -10,36 +10,34 @@ import { SECTION_IDS, ANIMATION } from "@/lib/constants";
 const categories = ["frontend", "backend", "tools"] as const;
 
 export function TechStackSection() {
-  const t = useTranslations("TechStack");
+	const t = useTranslations("TechStack");
 
-  return (
-    <section id={SECTION_IDS.techStack} className="tech-stack">
-      <SectionHeading label={t("label")} title={t("heading")} />
+	return (
+		<section id={SECTION_IDS.techStack} className='tech-stack'>
+			<SectionHeading label={t("label")} title={t("heading")} />
 
-      {categories.map((category) => {
-        const items = techStack.filter((item) => item.category === category);
-        if (items.length === 0) return null;
+			{categories.map((category) => {
+				const items = techStack.filter((item) => item.category === category);
+				if (items.length === 0) return null;
 
-        return (
-          <m.div
-            key={category}
-            className="tech-stack__category"
-            initial={ANIMATION.fadeIn.initial}
-            whileInView={ANIMATION.fadeIn.animate}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={ANIMATION.fadeIn.transition}
-          >
-            <h3 className="tech-stack__category-label">
-              {t(`categories.${category}`)}
-            </h3>
-            <div className="tech-stack__grid">
-              {items.map((item, index) => (
-                <TechIcon key={item.name} item={item} index={index} />
-              ))}
-            </div>
-          </m.div>
-        );
-      })}
-    </section>
-  );
+				return (
+					<m.div
+						key={category}
+						className='tech-stack__category'
+						initial={ANIMATION.fadeIn.initial}
+						whileInView={ANIMATION.fadeIn.animate}
+						viewport={{ once: true, margin: "-50px" }}
+						transition={ANIMATION.fadeIn.transition}
+					>
+						<h3 className='tech-stack__category-label'>{t(`categories.${category}`)}</h3>
+						<div className='tech-stack__grid'>
+							{items.map((item, index) => (
+								<TechIcon key={item.name} item={item} index={index} />
+							))}
+						</div>
+					</m.div>
+				);
+			})}
+		</section>
+	);
 }
