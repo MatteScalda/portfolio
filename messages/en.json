@@ -37,6 +37,10 @@
 			"edil2000": {
 				"title": "Edil 2000 Samarate",
 				"description": "Corporate website for a construction company, featuring project showcases, services, and a modern design."
+			},
+			"repkit": {
+				"title": "RepKit",
+				"description": "A web application made for personal trainers to manage and share workout plans with their clients"
 			}
 		}
 	},

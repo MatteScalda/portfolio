@@ -37,6 +37,10 @@
 			"edil2000": {
 				"title": "Edil 2000 Samarate",
 				"description": "Sito web aziendale per un'impresa edile, con showcase dei progetti, servizi e un design moderno."
+			},
+			"repkit": {
+				"title": "RepKit",
+				"description": "Un'applicazione web fatta per personal trainer per gestire e condividere le schede di allenamento con i propri clienti"
 			}
 		}
 	},

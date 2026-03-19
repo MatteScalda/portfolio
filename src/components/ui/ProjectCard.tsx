@@ -7,6 +7,7 @@ import { GlowCard } from "@/components/ui/GlowCard";
 import { ExternalLinkIcon, CodeIcon } from "@/components/ui/Icons";
 import { Project } from "@/types/project";
 import { ANIMATION } from "@/lib/constants";
+import Image from "next/image";
 
 interface ProjectCardProps {
 	project: Project;
@@ -53,7 +54,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 					)}
 
 					<div className='project-card__image-wrapper'>
-						<div
+						{/* <div
 							style={{
 								width: "100%",
 								height: "100%",
@@ -67,7 +68,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 							}}
 						>
 							{t(`items.${project.id}.title`)}
-						</div>
+						</div> */}
+						<Image
+							src={project.thumbnail}
+							alt={t(`items.${project.id}.title`)}
+							fill
+							sizes='(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw'
+							className='project-card__image'
+							priority={index === 0}
+						/>
 					</div>
 
 					<div className='project-card__body'>
