@@ -13,6 +13,8 @@ export const techStack: TechItem[] = [
 	// Backend
 	{ name: "Java", category: "backend", brandColor: "#ED8B00", url: "https://dev.java" },
 	{ name: "PostgreSQL", category: "backend", brandColor: "#4169E1", url: "https://postgresql.org" },
+	{ name: "Wordpress", category: "backend", brandColor: "#0073AA", url: "https://wordpress.org" },
+	{ name: "PHP", category: "backend", brandColor: "#777BB4", url: "https://php.net" },
 
 	// Tools
 	{ name: "Git", category: "tools", brandColor: "#F05032", url: "https://git-scm.com" },

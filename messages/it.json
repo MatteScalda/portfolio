@@ -1,15 +1,6 @@
 {
-	"Metadata": {
-		"title": "Matteo | Sviluppatore Web Freelance",
-		"description": "Sviluppatore web freelance specializzato nella creazione di esperienze digitali moderne e performanti."
-	},
-	"Nav": {
-		"about": "Chi Sono",
-		"projects": "Progetti",
-		"techStack": "Tecnologie",
-		"contact": "Contatti",
-		"cta": "Contattami"
-	},
+	"Metadata": { "title": "Matteo | Sviluppatore Web Freelance", "description": "Sviluppatore web freelance specializzato nella creazione di esperienze digitali moderne e performanti." },
+	"Nav": { "about": "Chi Sono", "projects": "Progetti", "techStack": "Tecnologie", "contact": "Contatti", "cta": "Contattami" },
 	"Hero": {
 		"greeting": "Ciao, sono",
 		"name": "Matteo",
@@ -30,29 +21,12 @@
 		"viewProject": "Demo Live",
 		"viewCode": "Codice Sorgente",
 		"items": {
-			"timetrack": {
-				"title": "TimeTrack",
-				"description": "Un'applicazione web per il tracciamento del tempo dedicata a freelancer e team, per gestire progetti e ore fatturabili."
-			},
-			"edil2000": {
-				"title": "Edil 2000 Samarate",
-				"description": "Sito web aziendale per un'impresa edile, con showcase dei progetti, servizi e un design moderno."
-			},
-			"repkit": {
-				"title": "RepKit",
-				"description": "Un'applicazione web fatta per personal trainer per gestire e condividere le schede di allenamento con i propri clienti"
-			}
+			"jushin": { "title": "Jushin", "description": "Un sito web per un campus estivo per gestire le attività e le prenotazioni." },
+			"havant": { "title": "Havant", "description": "Un sito web per una società per mostrare i loro prodotti e servizi, con un design moderno e un tema personalizzato per Wordpress." },
+			"edil2000": { "title": "Edil 2000", "description": "Un sito web per una società edile per mostrare i loro progetti e servizi. Realizzato all'inizio della mia carriera." }
 		}
 	},
-	"TechStack": {
-		"heading": "Tecnologie",
-		"label": "// strumenti che uso",
-		"categories": {
-			"frontend": "Frontend",
-			"backend": "Backend",
-			"tools": "Strumenti"
-		}
-	},
+	"TechStack": { "heading": "Tecnologie", "label": "// strumenti che uso", "categories": { "frontend": "Frontend", "backend": "Backend", "tools": "Strumenti" } },
 	"Contact": {
 		"label": "// parliamone",
 		"headline1": "Hai un'idea?",
@@ -62,23 +36,9 @@
 		"modal": {
 			"title": "Come preferisci contattarmi?",
 			"or": "o",
-			"call": {
-				"title": "Chiamami",
-				"hours": "Lun–Sab, 9:00–21:00 CET",
-				"cta": "Chiama ora",
-				"copy": "Copia numero",
-				"copied": "Copiato!"
-			},
-			"email": {
-				"title": "Invia un'email",
-				"cta": "Apri email",
-				"copy": "Copia email",
-				"copied": "Copiata!"
-			}
+			"call": { "title": "Chiamami", "hours": "Lun–Sab, 9:00–21:00 CET", "cta": "Chiama ora", "copy": "Copia numero", "copied": "Copiato!" },
+			"email": { "title": "Invia un'email", "cta": "Apri email", "copy": "Copia email", "copied": "Copiata!" }
 		}
 	},
-	"Footer": {
-		"copyright": "Tutti i diritti riservati.",
-		"builtWith": "Realizzato con Next.js"
-	}
+	"Footer": { "copyright": "Tutti i diritti riservati.", "builtWith": "Realizzato con Next.js" }
 }

@@ -1,23 +1,7 @@
 {
-	"Metadata": {
-		"title": "Matteo | Freelance Web Developer",
-		"description": "Freelance web developer crafting modern, performant digital experiences."
-	},
-	"Nav": {
-		"about": "About",
-		"projects": "Projects",
-		"techStack": "Tech Stack",
-		"contact": "Contact",
-		"cta": "Get in touch"
-	},
-	"Hero": {
-		"greeting": "Hi, I'm",
-		"name": "Matteo",
-		"role": "Freelance Web Developer",
-		"tagline": "I build modern, fast, and beautiful web experiences.",
-		"cta": "See my work",
-		"scroll": "scroll"
-	},
+	"Metadata": { "title": "Matteo | Freelance Web Developer", "description": "Freelance web developer crafting modern, performant digital experiences." },
+	"Nav": { "about": "About", "projects": "Projects", "techStack": "Tech Stack", "contact": "Contact", "cta": "Get in touch" },
+	"Hero": { "greeting": "Hi, I'm", "name": "Matteo", "role": "Freelance Web Developer", "tagline": "I build modern, fast, and beautiful web experiences.", "cta": "See my work", "scroll": "scroll" },
 	"About": {
 		"heading": "About Me",
 		"label": "// who I am",
@@ -30,29 +14,12 @@
 		"viewProject": "Live Demo",
 		"viewCode": "Source Code",
 		"items": {
-			"timetrack": {
-				"title": "TimeTrack",
-				"description": "A time tracking web application for freelancers and teams to manage projects and track billable hours efficiently."
-			},
-			"edil2000": {
-				"title": "Edil 2000 Samarate",
-				"description": "Corporate website for a construction company, featuring project showcases, services, and a modern design."
-			},
-			"repkit": {
-				"title": "RepKit",
-				"description": "A web application made for personal trainers to manage and share workout plans with their clients"
-			}
+			"jushin": { "title": "Jushin", "description": "A website for a summer camp for kids to manage their activities and bookings." },
+			"havant": { "title": "Havant", "description": "A website for a company to showcase their products and services, with a modern design and a custom theme." },
+			"edil2000": { "title": "Edil 2000", "description": "A website for a cunstruction company to showcase their projects and services. Done at the beginning of my career." }
 		}
 	},
-	"TechStack": {
-		"heading": "Tech Stack",
-		"label": "// tools I use",
-		"categories": {
-			"frontend": "Frontend",
-			"backend": "Backend",
-			"tools": "Tools"
-		}
-	},
+	"TechStack": { "heading": "Tech Stack", "label": "// tools I use", "categories": { "frontend": "Frontend", "backend": "Backend", "tools": "Tools" } },
 	"Contact": {
 		"label": "// let's talk",
 		"headline1": "Have an idea?",
@@ -62,23 +29,9 @@
 		"modal": {
 			"title": "How would you like to connect?",
 			"or": "or",
-			"call": {
-				"title": "Give me a call",
-				"hours": "Mon–Sat, 9:00–21:00 CET",
-				"cta": "Call now",
-				"copy": "Copy number",
-				"copied": "Copied!"
-			},
-			"email": {
-				"title": "Send an email",
-				"cta": "Open email",
-				"copy": "Copy email",
-				"copied": "Copied!"
-			}
+			"call": { "title": "Give me a call", "hours": "Mon–Sat, 9:00–21:00 CET", "cta": "Call now", "copy": "Copy number", "copied": "Copied!" },
+			"email": { "title": "Send an email", "cta": "Open email", "copy": "Copy email", "copied": "Copied!" }
 		}
 	},
-	"Footer": {
-		"copyright": "All rights reserved.",
-		"builtWith": "Built with Next.js"
-	}
+	"Footer": { "copyright": "All rights reserved.", "builtWith": "Built with Next.js" }
 }
