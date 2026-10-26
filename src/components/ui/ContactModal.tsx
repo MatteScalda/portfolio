@@ -5,9 +5,10 @@ import { m, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
 import { PhoneIcon, MailIcon, CopyIcon, CheckIcon, XIcon } from "@/components/ui/Icons";
 import { useContactModal } from "@/lib/contact-modal-context";
-import { SITE } from "@/lib/constants";
+import { useSiteSettings } from "@/lib/site-settings-context";
 
 export function ContactModal() {
+	const SITE = useSiteSettings();
 	const { isOpen, closeModal: onClose } = useContactModal();
 	const t = useTranslations("Contact");
 	const [copiedPhone, setCopiedPhone] = useState(false);
@@ -17,13 +18,13 @@ export function ContactModal() {
 		await navigator.clipboard.writeText(SITE.phone);
 		setCopiedPhone(true);
 		setTimeout(() => setCopiedPhone(false), 2000);
-	}, []);
+	}, [SITE.phone]);
 
 	const handleCopyMail = useCallback(async () => {
 		await navigator.clipboard.writeText(SITE.email);
 		setCopiedMail(true);
 		setTimeout(() => setCopiedMail(false), 2000);
-	}, []);
+	}, [SITE.email]);
 
 	useEffect(() => {
 		if (!isOpen) return;

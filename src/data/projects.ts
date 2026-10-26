@@ -1,6 +1,6 @@
 import { Project } from "@/types/project";
 
-export const projects: Project[] = [
+export const projects: Omit<Project, "title" | "description">[] = [
 	{
 		id: "jushin",
 		slug: "scuola-del-tempo-jushin",

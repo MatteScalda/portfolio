@@ -5,9 +5,11 @@ import { m } from "motion/react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useContactModal } from "@/lib/contact-modal-context";
 import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/ui/Icons";
-import { SITE, SECTION_IDS, ANIMATION } from "@/lib/constants";
+import { SECTION_IDS, ANIMATION } from "@/lib/constants";
+import { useSiteSettings } from "@/lib/site-settings-context";
 
 export function ContactSection() {
+  const SITE = useSiteSettings();
   const t = useTranslations("Contact");
   const { openModal } = useContactModal();
 

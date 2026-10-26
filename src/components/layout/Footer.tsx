@@ -1,10 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { SITE } from "@/lib/constants";
+import { useSiteSettings } from "@/lib/site-settings-context";
 import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/ui/Icons";
 
 export function Footer() {
+  const SITE = useSiteSettings();
   const t = useTranslations("Footer");
   const year = new Date().getFullYear();
 

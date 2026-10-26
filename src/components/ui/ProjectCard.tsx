@@ -2,9 +2,8 @@
 
 import { useCallback, useState } from "react";
 import { m, useMotionValue, useSpring } from "motion/react";
-import { useTranslations } from "next-intl";
 import { GlowCard } from "@/components/ui/GlowCard";
-import { ExternalLinkIcon, CodeIcon } from "@/components/ui/Icons";
+import { ExternalLinkIcon } from "@/components/ui/Icons";
 import { Project } from "@/types/project";
 import { ANIMATION } from "@/lib/constants";
 import Image from "next/image";
@@ -15,7 +14,6 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
-	const t = useTranslations("Projects");
 	const [hovered, setHovered] = useState(false);
 
 	const cursorX = useMotionValue(0);
@@ -44,7 +42,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 			<GlowCard>
 				<div className={`project-card${url ? " project-card--has-link" : ""}`} onMouseMove={handleMouseMove} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
 					{/* Stretched link — covers full card, sits behind content */}
-					{url && <a href={url} target='_blank' rel='noopener noreferrer' className='project-card__stretched-link' aria-label={t(`items.${project.id}.title`)} />}
+					{url && <a href={url} target='_blank' rel='noopener noreferrer' className='project-card__stretched-link' aria-label={project.title} />}
 
 					{/* Custom cursor */}
 					{url && (
@@ -67,11 +65,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 								color: "var(--color-text-muted)",
 							}}
 						>
-							{t(`items.${project.id}.title`)}
+							{project.title}
 						</div> */}
 						<Image
 							src={project.thumbnail}
-							alt={t(`items.${project.id}.title`)}
+							alt={project.thumbnailAlt || project.title}
 							fill
 							sizes='(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw'
 							className='project-card__image'
@@ -80,8 +78,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 					</div>
 
 					<div className='project-card__body'>
-						<h3 className='project-card__title'>{t(`items.${project.id}.title`)}</h3>
-						<p className='project-card__description'>{t(`items.${project.id}.description`)}</p>
+						<h3 className='project-card__title'>{project.title}</h3>
+						<p className='project-card__description'>{project.description}</p>
 						<div className='project-card__tags'>
 							{project.techStack.map((tech) => (
 								<span key={tech} className='project-card__tag'>

@@ -1,19 +1,20 @@
 import { MetadataRoute } from "next";
-import { SITE } from "@/lib/constants";
+import { getSiteContent } from "@/lib/cms";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const { settings } = await getSiteContent("it");
   const locales = ["en", "it"];
 
   return locales.map((locale) => ({
-    url: `${SITE.url}/${locale}`,
+    url: `${settings.url}/${locale}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 1.0,
     alternates: {
       languages: Object.fromEntries(
-        locales.map((l) => [l, `${SITE.url}/${l}`])
+        locales.map((l) => [l, `${settings.url}/${l}`])
       ),
     },
   }));

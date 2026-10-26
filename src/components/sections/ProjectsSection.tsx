@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProjectCard } from "@/components/ui/ProjectCard";
-import { projects } from "@/data/projects";
+import type { Project } from "@/types/project";
 import { SECTION_IDS } from "@/lib/constants";
 
-export function ProjectsSection() {
+export function ProjectsSection({ projects }: { projects: Project[] }) {
   const t = useTranslations("Projects");
 
   return (

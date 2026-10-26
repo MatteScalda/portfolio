@@ -4,12 +4,12 @@ import { useTranslations } from "next-intl";
 import { m } from "motion/react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TechIcon } from "@/components/ui/TechIcon";
-import { techStack } from "@/data/techStack";
+import type { TechItem } from "@/types/techStack";
 import { SECTION_IDS, ANIMATION } from "@/lib/constants";
 
 const categories = ["frontend", "backend", "tools"] as const;
 
-export function TechStackSection() {
+export function TechStackSection({ techStack }: { techStack: TechItem[] }) {
 	const t = useTranslations("TechStack");
 
 	return (
